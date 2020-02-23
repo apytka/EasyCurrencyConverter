@@ -10,7 +10,7 @@
 <head>
     <title>Currency Converter</title>
     <script src="https://kit.fontawesome.com/73cf130a3e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/css.css"/>
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
