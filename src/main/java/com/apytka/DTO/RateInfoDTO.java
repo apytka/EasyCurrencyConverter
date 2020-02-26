@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RateInfoDTO {
-    private String currency;
     private String code;
     private double mid;
 

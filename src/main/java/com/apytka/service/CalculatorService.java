@@ -19,7 +19,7 @@ public class CalculatorService {
 
     static {
         try {
-            currencies = RateDAO.getDataNbp("http://api.nbp.pl/api/exchangerates/tables/A?format=JSON");
+            currencies = RateDAO.getDataNbp();
             currencies.put("PLN", 1.0);
         } catch (IOException e) {
             e.printStackTrace();

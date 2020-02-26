@@ -14,10 +14,11 @@ import java.util.Map;
 
 
 public class RateDAO {
+    private static final String URL = "http://api.nbp.pl/api/exchangerates/tables/A?format=JSON";
 
-    public static Map<String, Double> getDataNbp(String url) throws IOException {
+    public static Map<String, Double> getDataNbp() throws IOException {
         Map<String, Double> curriences = new HashMap<>();
-        URL myUrl = new URL(url);
+        URL myUrl = new URL(URL);
         InputStream ratesIS = myUrl.openStream();
         ObjectMapper mapper = new ObjectMapper();
         List<RateDTO> rateDTO = mapper.readValue(ratesIS, new TypeReference<List<RateDTO>>() {

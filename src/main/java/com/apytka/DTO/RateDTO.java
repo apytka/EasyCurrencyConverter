@@ -11,8 +11,5 @@ import java.util.List;
 @AllArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RateDTO {
-    private String table;
-    private String no;
-    private String effectiveDate;
     private List<RateInfoDTO> rates;
 }
